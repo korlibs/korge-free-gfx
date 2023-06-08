@@ -12,7 +12,7 @@ do
       return app.alert("There's no active script")
    end
 
-   local frameDuration = 1
+   local frameDuration = 0.1
    local loopNames = { 'idle', 'gesture', 'walk', 'attack', 'death' }
    for i, loopName in ipairs(loopNames) do
       local fromFrame = (i-1) * 10 + 1
