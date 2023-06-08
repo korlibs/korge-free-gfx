@@ -13,15 +13,11 @@ if spr == nil then
    return app.alert("There's no active script")
 end
 
-app.command.DuplicateSprite()
-local sprite1 = app.activeSprite
-app.command.DuplicateSprite()
-local sprite2 = app.activeSprite
-
-for i = 1, 50 do
-   sprite1:deleteFrame(1)
-   sprite2:deleteFrame(51)
-end
+local loopNames = { 'idle', 'gesture', 'walk', 'attack', 'death' }
+local frameTime = 0.1
+local framesPerLoop = 10
+local numberOfFramesPerSprite = #loopNames * framesPerLoop
+local numberOfSprites = #spr.frames / numberOfFramesPerSprite
 
 -- Function to create animation tags
 function create_animation_tags(spr, names, frames_per_tag, frameDuration)
@@ -43,8 +39,32 @@ function create_animation_tags(spr, names, frames_per_tag, frameDuration)
    end
 end
 
-local loopNames = { 'idle', 'gesture', 'walk', 'attack', 'death' }
-create_animation_tags(sprite1, loopNames, 10, 0.1)
-create_animation_tags(sprite2, loopNames, 10, 0.1)
+function delete_frames_range(spr, from, to)
+
+   for j = from, to do
+      spr:deleteFrame(from)
+   end
+end
+
+function keep_frames_range(spr, from, to)
+   delete_frames_range(spr, 1, from - 1)
+   delete_frames_range(spr, to + 1, #spr.frames)
+end
+
+local sprites = {}
+for i = 1, numberOfSprites do
+   app.command.DuplicateSprite()
+   local sprite = app.activeSprite
+   table.insert(sprites, sprite)
+end
+
+--app.alert("sprites" .. tostring(#sprites))
+
+for i, sprite in ipairs(sprites) do
+   --app.alert("sprite" .. tostring(sprite))
+   local from = 1 + (i - 1) * numberOfFramesPerSprite
+   keep_frames_range(sprite, from, from + numberOfFramesPerSprite - 1)
+   create_animation_tags(sprite, loopNames, framesPerLoop, frameTime)
+end
 
 app.refresh()
