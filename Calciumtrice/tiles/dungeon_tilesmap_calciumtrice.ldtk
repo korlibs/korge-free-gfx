@@ -11,7 +11,7 @@
 	"iid": "8db93ce0-ed50-11ed-926a-4957c7fbc019",
 	"jsonVersion": "1.3.2",
 	"appBuildId": 467536,
-	"nextUid": 167,
+	"nextUid": 170,
 	"identifierStyle": "Capitalize",
 	"toc": [],
 	"worldLayout": "Free",
@@ -41,9 +41,9 @@
 	"defs": { "layers": [
 		{
 			"__type": "Tiles",
-			"identifier": "Details",
+			"identifier": "CeilingDetails",
 			"type": "Tiles",
-			"uid": 6,
+			"uid": 167,
 			"doc": null,
 			"uiColor": null,
 			"gridSize": 16,
@@ -65,7 +65,7 @@
 			"intGridValues": [],
 			"autoRuleGroups": [],
 			"autoSourceLayerDefUid": null,
-			"tilesetDefUid": 1,
+			"tilesetDefUid": null,
 			"tilePivotX": 0,
 			"tilePivotY": 0
 		},
@@ -716,6 +716,36 @@
 			"autoRuleGroups": [],
 			"autoSourceLayerDefUid": null,
 			"tilesetDefUid": null,
+			"tilePivotX": 0,
+			"tilePivotY": 0
+		},
+		{
+			"__type": "Tiles",
+			"identifier": "Details",
+			"type": "Tiles",
+			"uid": 6,
+			"doc": null,
+			"uiColor": null,
+			"gridSize": 16,
+			"guideGridWid": 0,
+			"guideGridHei": 0,
+			"displayOpacity": 1,
+			"inactiveOpacity": 1,
+			"hideInList": false,
+			"hideFieldsWhenInactive": false,
+			"canSelectWhenInactive": true,
+			"renderInWorldView": true,
+			"pxOffsetX": 0,
+			"pxOffsetY": 0,
+			"parallaxFactorX": 0,
+			"parallaxFactorY": 0,
+			"parallaxScaling": true,
+			"requiredTags": [],
+			"excludedTags": [],
+			"intGridValues": [],
+			"autoRuleGroups": [],
+			"autoSourceLayerDefUid": null,
+			"tilesetDefUid": 1,
 			"tilePivotX": 0,
 			"tilePivotY": 0
 		},
@@ -1469,7 +1499,7 @@
 			"limitScope": "PerLevel",
 			"limitBehavior": "MoveLastOne",
 			"pivotX": 0,
-			"pivotY": 0,
+			"pivotY": 1,
 			"fieldDefs": [
 				{
 					"identifier": "Tile",
@@ -1536,7 +1566,7 @@
 			"limitScope": "PerLevel",
 			"limitBehavior": "MoveLastOne",
 			"pivotX": 0,
-			"pivotY": 0,
+			"pivotY": 1,
 			"fieldDefs": [
 				{
 					"identifier": "Tile",
@@ -1709,6 +1739,40 @@
 					"allowedRefsEntityUid": null,
 					"allowedRefTags": [],
 					"tilesetUid": null
+				},
+				{
+					"identifier": "Name",
+					"doc": null,
+					"__type": "String",
+					"uid": 168,
+					"type": "F_String",
+					"isArray": false,
+					"canBeNull": true,
+					"arrayMinLength": null,
+					"arrayMaxLength": null,
+					"editorDisplayMode": "Hidden",
+					"editorDisplayScale": 0,
+					"editorDisplayPos": "Above",
+					"editorLinkStyle": "StraightArrow",
+					"editorAlwaysShow": false,
+					"editorShowInWorld": true,
+					"editorCutLongValues": true,
+					"editorTextSuffix": null,
+					"editorTextPrefix": null,
+					"useForSmartColor": false,
+					"min": null,
+					"max": null,
+					"regex": null,
+					"acceptFileTypes": null,
+					"defaultOverride": null,
+					"textLanguageMode": null,
+					"symmetricalRef": false,
+					"autoChainRef": true,
+					"allowOutOfLevelRef": true,
+					"allowedRefs": "OnlySame",
+					"allowedRefsEntityUid": null,
+					"allowedRefTags": [],
+					"tilesetUid": null
 				}
 			]
 		},
@@ -1738,7 +1802,7 @@
 			"limitScope": "PerLevel",
 			"limitBehavior": "MoveLastOne",
 			"pivotX": 0,
-			"pivotY": 0,
+			"pivotY": 1,
 			"fieldDefs": [
 				{
 					"identifier": "Tile",
@@ -1886,6 +1950,40 @@
 					"type": "F_Enum(144)",
 					"isArray": true,
 					"canBeNull": false,
+					"arrayMinLength": null,
+					"arrayMaxLength": null,
+					"editorDisplayMode": "Hidden",
+					"editorDisplayScale": 0,
+					"editorDisplayPos": "Above",
+					"editorLinkStyle": "StraightArrow",
+					"editorAlwaysShow": false,
+					"editorShowInWorld": true,
+					"editorCutLongValues": true,
+					"editorTextSuffix": null,
+					"editorTextPrefix": null,
+					"useForSmartColor": false,
+					"min": null,
+					"max": null,
+					"regex": null,
+					"acceptFileTypes": null,
+					"defaultOverride": null,
+					"textLanguageMode": null,
+					"symmetricalRef": false,
+					"autoChainRef": true,
+					"allowOutOfLevelRef": true,
+					"allowedRefs": "OnlySame",
+					"allowedRefsEntityUid": null,
+					"allowedRefTags": [],
+					"tilesetUid": null
+				},
+				{
+					"identifier": "Name",
+					"doc": null,
+					"__type": "String",
+					"uid": 169,
+					"type": "F_String",
+					"isArray": false,
+					"canBeNull": true,
 					"arrayMinLength": null,
 					"arrayMaxLength": null,
 					"editorDisplayMode": "Hidden",
@@ -2074,7 +2172,7 @@
 			"limitScope": "PerLevel",
 			"limitBehavior": "MoveLastOne",
 			"pivotX": 0,
-			"pivotY": 0,
+			"pivotY": 1,
 			"fieldDefs": [
 				{
 					"identifier": "Tile",
@@ -2222,7 +2320,7 @@
 			"fieldInstances": [],
 			"layerInstances": [
 				{
-					"__identifier": "Details",
+					"__identifier": "CeilingDetails",
 					"__type": "Tiles",
 					"__cWid": 21,
 					"__cHei": 20,
@@ -2230,36 +2328,20 @@
 					"__opacity": 1,
 					"__pxTotalOffsetX": 0,
 					"__pxTotalOffsetY": 0,
-					"__tilesetDefUid": 1,
-					"__tilesetRelPath": "dungeon_tileset_calciumtrice.png",
-					"iid": "ccdfc5b0-ed50-11ed-926a-5784cf80b70f",
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
+					"iid": "820035c0-ed50-11ed-8bb3-01af4799d064",
 					"levelId": 0,
-					"layerDefUid": 6,
+					"layerDefUid": 167,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
 					"intGridCsv": [],
 					"autoLayerTiles": [],
-					"seed": 1381591,
+					"seed": 8255379,
 					"overrideTilesetUid": null,
-					"gridTiles": [
-						{ "px": [160,0], "src": [112,64], "f": 0, "t": 127, "d": [10], "a": 1 },
-						{ "px": [160,16], "src": [112,80], "f": 0, "t": 157, "d": [31], "a": 1 },
-						{ "px": [96,112], "src": [112,176], "f": 0, "t": 337, "d": [153], "a": 1 },
-						{ "px": [128,112], "src": [352,176], "f": 0, "t": 352, "d": [155], "a": 1 },
-						{ "px": [176,112], "src": [32,64], "f": 0, "t": 122, "d": [158], "a": 1 },
-						{ "px": [208,112], "src": [352,176], "f": 0, "t": 352, "d": [160], "a": 1 },
-						{ "px": [224,112], "src": [16,64], "f": 0, "t": 121, "d": [161], "a": 1 },
-						{ "px": [96,128], "src": [112,192], "f": 0, "t": 367, "d": [174], "a": 1 },
-						{ "px": [128,128], "src": [352,192], "f": 0, "t": 382, "d": [176], "a": 1 },
-						{ "px": [176,128], "src": [32,80], "f": 0, "t": 152, "d": [179], "a": 1 },
-						{ "px": [208,128], "src": [352,192], "f": 0, "t": 382, "d": [181], "a": 1 },
-						{ "px": [224,128], "src": [16,80], "f": 0, "t": 151, "d": [182], "a": 1 },
-						{ "px": [96,144], "src": [112,208], "f": 0, "t": 397, "d": [195], "a": 1 },
-						{ "px": [176,176], "src": [336,304], "f": 0, "t": 591, "d": [242], "a": 1 },
-						{ "px": [176,192], "src": [336,320], "f": 0, "t": 621, "d": [263], "a": 1 }
-					],
+					"gridTiles": [],
 					"entityInstances": []
 				},
 				{
@@ -2559,8 +2641,8 @@
 					"entityInstances": [
 						{
 							"__identifier": "Entity",
-							"__grid": [14,11],
-							"__pivot": [0,0],
+							"__grid": [14,12],
+							"__pivot": [0,1],
 							"__tags": [],
 							"__tile": { "tilesetUid": 1, "x": 384, "y": 352, "w": 16, "h": 16 },
 							"__smartColor": "#BE4A2F",
@@ -2568,7 +2650,7 @@
 							"width": 16,
 							"height": 16,
 							"defUid": 140,
-							"px": [224,180],
+							"px": [232,196],
 							"fieldInstances": [{ "__identifier": "Tile", "__type": "Tile", "__value": { "tilesetUid": 1, "x": 384, "y": 352, "w": 16, "h": 16 }, "__tile": { "tilesetUid": 1, "x": 384, "y": 352, "w": 16, "h": 16 }, "defUid": 141, "realEditorValues": [{
 								"id": "V_String",
 								"params": ["384,352,16,16"]
@@ -2577,7 +2659,7 @@
 						{
 							"__identifier": "Chest",
 							"__grid": [4,9],
-							"__pivot": [0,0],
+							"__pivot": [0,1],
 							"__tags": [ "action", "trigger" ],
 							"__tile": { "tilesetUid": 1, "x": 32, "y": 304, "w": 16, "h": 16 },
 							"__smartColor": "#D77643",
@@ -2585,7 +2667,7 @@
 							"width": 16,
 							"height": 16,
 							"defUid": 142,
-							"px": [64,144],
+							"px": [64,160],
 							"fieldInstances": [
 								{ "__identifier": "Tile", "__type": "Tile", "__value": { "tilesetUid": 1, "x": 32, "y": 304, "w": 16, "h": 16 }, "__tile": { "tilesetUid": 1, "x": 32, "y": 304, "w": 16, "h": 16 }, "defUid": 143, "realEditorValues": [] },
 								{ "__identifier": "Items", "__type": "Array<LocalEnum.Items>", "__value": [ "Red_potion", "Sword" ], "__tile": null, "defUid": 145, "realEditorValues": [ {
@@ -2599,24 +2681,7 @@
 						},
 						{
 							"__identifier": "Player",
-							"__grid": [9,14],
-							"__pivot": [0,1],
-							"__tags": [],
-							"__tile": { "tilesetUid": 1, "x": 304, "y": 416, "w": 16, "h": 32 },
-							"__smartColor": "#AABCEA",
-							"iid": "78848b60-ed50-11ed-8bb3-b1086f587c07",
-							"width": 16,
-							"height": 32,
-							"defUid": 146,
-							"px": [144,240],
-							"fieldInstances": [
-								{ "__identifier": "Tile", "__type": "Tile", "__value": { "tilesetUid": 1, "x": 304, "y": 416, "w": 16, "h": 32 }, "__tile": { "tilesetUid": 1, "x": 304, "y": 416, "w": 16, "h": 32 }, "defUid": 147, "realEditorValues": [] },
-								{ "__identifier": "Point", "__type": "Array<Point>", "__value": [], "__tile": null, "defUid": 150, "realEditorValues": [] }
-							]
-						},
-						{
-							"__identifier": "Player",
-							"__grid": [12,14],
+							"__grid": [13,14],
 							"__pivot": [0,1],
 							"__tags": [],
 							"__tile": { "tilesetUid": 1, "x": 192, "y": 416, "w": 16, "h": 32 },
@@ -2625,13 +2690,17 @@
 							"width": 16,
 							"height": 32,
 							"defUid": 146,
-							"px": [192,240],
+							"px": [208,240],
 							"fieldInstances": [
 								{ "__identifier": "Tile", "__type": "Tile", "__value": { "tilesetUid": 1, "x": 192, "y": 416, "w": 16, "h": 32 }, "__tile": { "tilesetUid": 1, "x": 192, "y": 416, "w": 16, "h": 32 }, "defUid": 147, "realEditorValues": [{
 									"id": "V_String",
 									"params": ["192,416,16,32"]
 								}] },
-								{ "__identifier": "Point", "__type": "Array<Point>", "__value": [], "__tile": null, "defUid": 150, "realEditorValues": [] }
+								{ "__identifier": "Point", "__type": "Array<Point>", "__value": [], "__tile": null, "defUid": 150, "realEditorValues": [] },
+								{ "__identifier": "Name", "__type": "String", "__value": "Cleric", "__tile": null, "defUid": 168, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Cleric"]
+								}] }
 							]
 						},
 						{
@@ -2658,10 +2727,91 @@
 								}, {
 									"id": "V_String",
 									"params": ["Sword"]
-								} ] }
+								} ] },
+								{ "__identifier": "Name", "__type": "String", "__value": "Minotaur", "__tile": null, "defUid": 169, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Minotaur"]
+								}] }
+							]
+						},
+						{
+							"__identifier": "Object",
+							"__grid": [11,12],
+							"__pivot": [0,1],
+							"__tags": [],
+							"__tile": { "tilesetUid": 1, "x": 336, "y": 304, "w": 16, "h": 32 },
+							"__smartColor": "#733E39",
+							"iid": "f6adaa30-ed50-11ed-8bb3-73742954f039",
+							"width": 16,
+							"height": 32,
+							"defUid": 159,
+							"px": [176,208],
+							"fieldInstances": [{ "__identifier": "Tile", "__type": "Tile", "__value": { "tilesetUid": 1, "x": 336, "y": 304, "w": 16, "h": 32 }, "__tile": { "tilesetUid": 1, "x": 336, "y": 304, "w": 16, "h": 32 }, "defUid": 160, "realEditorValues": [{
+								"id": "V_String",
+								"params": ["336,304,16,32"]
+							}] }]
+						},
+						{
+							"__identifier": "Player",
+							"__grid": [9,14],
+							"__pivot": [0,1],
+							"__tags": [],
+							"__tile": { "tilesetUid": 1, "x": 304, "y": 416, "w": 16, "h": 32 },
+							"__smartColor": "#AABCEA",
+							"iid": "4cf670c0-ed50-11ed-8bb3-3993b1314e84",
+							"width": 16,
+							"height": 32,
+							"defUid": 146,
+							"px": [144,240],
+							"fieldInstances": [
+								{ "__identifier": "Tile", "__type": "Tile", "__value": { "tilesetUid": 1, "x": 304, "y": 416, "w": 16, "h": 32 }, "__tile": { "tilesetUid": 1, "x": 304, "y": 416, "w": 16, "h": 32 }, "defUid": 147, "realEditorValues": [] },
+								{ "__identifier": "Point", "__type": "Array<Point>", "__value": [], "__tile": null, "defUid": 150, "realEditorValues": [] },
+								{ "__identifier": "Name", "__type": "String", "__value": "Mage", "__tile": null, "defUid": 168, "realEditorValues": [{
+									"id": "V_String",
+									"params": ["Mage"]
+								}] }
 							]
 						}
 					]
+				},
+				{
+					"__identifier": "Details",
+					"__type": "Tiles",
+					"__cWid": 21,
+					"__cHei": 20,
+					"__gridSize": 16,
+					"__opacity": 1,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": 1,
+					"__tilesetRelPath": "dungeon_tileset_calciumtrice.png",
+					"iid": "ccdfc5b0-ed50-11ed-926a-5784cf80b70f",
+					"levelId": 0,
+					"layerDefUid": 6,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
+					"intGridCsv": [],
+					"autoLayerTiles": [],
+					"seed": 1381591,
+					"overrideTilesetUid": null,
+					"gridTiles": [
+						{ "px": [160,0], "src": [112,64], "f": 0, "t": 127, "d": [10], "a": 1 },
+						{ "px": [160,16], "src": [112,80], "f": 0, "t": 157, "d": [31], "a": 1 },
+						{ "px": [96,112], "src": [112,176], "f": 0, "t": 337, "d": [153], "a": 1 },
+						{ "px": [128,112], "src": [352,176], "f": 0, "t": 352, "d": [155], "a": 1 },
+						{ "px": [176,112], "src": [32,64], "f": 0, "t": 122, "d": [158], "a": 1 },
+						{ "px": [208,112], "src": [352,176], "f": 0, "t": 352, "d": [160], "a": 1 },
+						{ "px": [224,112], "src": [16,64], "f": 0, "t": 121, "d": [161], "a": 1 },
+						{ "px": [96,128], "src": [112,192], "f": 0, "t": 367, "d": [174], "a": 1 },
+						{ "px": [128,128], "src": [352,192], "f": 0, "t": 382, "d": [176], "a": 1 },
+						{ "px": [176,128], "src": [32,80], "f": 0, "t": 152, "d": [179], "a": 1 },
+						{ "px": [208,128], "src": [352,192], "f": 0, "t": 382, "d": [181], "a": 1 },
+						{ "px": [224,128], "src": [16,80], "f": 0, "t": 151, "d": [182], "a": 1 },
+						{ "px": [96,144], "src": [112,208], "f": 0, "t": 397, "d": [195], "a": 1 }
+					],
+					"entityInstances": []
 				},
 				{
 					"__identifier": "Ground_details",
@@ -3040,7 +3190,7 @@
 			"fieldInstances": [],
 			"layerInstances": [
 				{
-					"__identifier": "Details",
+					"__identifier": "CeilingDetails",
 					"__type": "Tiles",
 					"__cWid": 10,
 					"__cHei": 12,
@@ -3048,25 +3198,20 @@
 					"__opacity": 1,
 					"__pxTotalOffsetX": 0,
 					"__pxTotalOffsetY": 0,
-					"__tilesetDefUid": 1,
-					"__tilesetRelPath": "dungeon_tileset_calciumtrice.png",
-					"iid": "082ba401-ed50-11ed-8bb3-6166b675cc54",
+					"__tilesetDefUid": null,
+					"__tilesetRelPath": null,
+					"iid": "820083e0-ed50-11ed-8bb3-63827b251d29",
 					"levelId": 158,
-					"layerDefUid": 6,
+					"layerDefUid": 167,
 					"pxOffsetX": 0,
 					"pxOffsetY": 0,
 					"visible": true,
 					"optionalRules": [],
 					"intGridCsv": [],
 					"autoLayerTiles": [],
-					"seed": 3843212,
+					"seed": 2879602,
 					"overrideTilesetUid": null,
-					"gridTiles": [
-						{ "px": [32,32], "src": [32,64], "f": 0, "t": 122, "d": [22], "a": 1 },
-						{ "px": [32,48], "src": [32,80], "f": 0, "t": 152, "d": [32], "a": 1 },
-						{ "px": [80,48], "src": [288,176], "f": 0, "t": 348, "d": [35], "a": 1 },
-						{ "px": [80,64], "src": [288,192], "f": 0, "t": 378, "d": [45], "a": 1 }
-					],
+					"gridTiles": [],
 					"entityInstances": []
 				},
 				{
@@ -3182,7 +3327,7 @@
 						{
 							"__identifier": "Door",
 							"__grid": [7,2],
-							"__pivot": [0,0],
+							"__pivot": [0,1],
 							"__tags": ["trigger"],
 							"__tile": { "tilesetUid": 1, "x": 80, "y": 176, "w": 16, "h": 32 },
 							"__smartColor": "#EAD4AA",
@@ -3198,8 +3343,8 @@
 						},
 						{
 							"__identifier": "Chest",
-							"__grid": [2,4],
-							"__pivot": [0,0],
+							"__grid": [2,3],
+							"__pivot": [0,1],
 							"__tags": [ "action", "trigger" ],
 							"__tile": { "tilesetUid": 1, "x": 32, "y": 304, "w": 16, "h": 16 },
 							"__smartColor": "#D77643",
@@ -3216,7 +3361,7 @@
 						{
 							"__identifier": "Chest",
 							"__grid": [1,8],
-							"__pivot": [0,0],
+							"__pivot": [0,1],
 							"__tags": [ "action", "trigger" ],
 							"__tile": { "tilesetUid": 1, "x": 0, "y": 304, "w": 16, "h": 16 },
 							"__smartColor": "#D77643",
@@ -3250,7 +3395,8 @@
 									"id": "V_String",
 									"params": ["272,416,16,32"]
 								}] },
-								{ "__identifier": "Point", "__type": "Array<Point>", "__value": [], "__tile": null, "defUid": 150, "realEditorValues": [] }
+								{ "__identifier": "Point", "__type": "Array<Point>", "__value": [], "__tile": null, "defUid": 150, "realEditorValues": [] },
+								{ "__identifier": "Name", "__type": "String", "__value": null, "__tile": null, "defUid": 168, "realEditorValues": [] }
 							]
 						},
 						{
@@ -3361,13 +3507,14 @@
 							"fieldInstances": [
 								{ "__identifier": "Tile", "__type": "Tile", "__value": { "tilesetUid": 1, "x": 192, "y": 464, "w": 16, "h": 32 }, "__tile": { "tilesetUid": 1, "x": 192, "y": 464, "w": 16, "h": 32 }, "defUid": 155, "realEditorValues": [] },
 								{ "__identifier": "HP", "__type": "Int", "__value": 100, "__tile": null, "defUid": 156, "realEditorValues": [{ "id": "V_Int", "params": [100] }] },
-								{ "__identifier": "DROP", "__type": "Array<LocalEnum.Items>", "__value": [], "__tile": null, "defUid": 157, "realEditorValues": [] }
+								{ "__identifier": "DROP", "__type": "Array<LocalEnum.Items>", "__value": [], "__tile": null, "defUid": 157, "realEditorValues": [] },
+								{ "__identifier": "Name", "__type": "String", "__value": null, "__tile": null, "defUid": 169, "realEditorValues": [] }
 							]
 						},
 						{
 							"__identifier": "Lever",
-							"__grid": [3,4],
-							"__pivot": [0,0],
+							"__grid": [3,3],
+							"__pivot": [0,1],
 							"__tags": ["action"],
 							"__tile": { "tilesetUid": 1, "x": 240, "y": 304, "w": 16, "h": 16 },
 							"__smartColor": "#FEAE34",
@@ -3390,6 +3537,36 @@
 							]
 						}
 					]
+				},
+				{
+					"__identifier": "Details",
+					"__type": "Tiles",
+					"__cWid": 10,
+					"__cHei": 12,
+					"__gridSize": 16,
+					"__opacity": 1,
+					"__pxTotalOffsetX": 0,
+					"__pxTotalOffsetY": 0,
+					"__tilesetDefUid": 1,
+					"__tilesetRelPath": "dungeon_tileset_calciumtrice.png",
+					"iid": "082ba401-ed50-11ed-8bb3-6166b675cc54",
+					"levelId": 158,
+					"layerDefUid": 6,
+					"pxOffsetX": 0,
+					"pxOffsetY": 0,
+					"visible": true,
+					"optionalRules": [],
+					"intGridCsv": [],
+					"autoLayerTiles": [],
+					"seed": 3843212,
+					"overrideTilesetUid": null,
+					"gridTiles": [
+						{ "px": [32,32], "src": [32,64], "f": 0, "t": 122, "d": [22], "a": 1 },
+						{ "px": [32,48], "src": [32,80], "f": 0, "t": 152, "d": [32], "a": 1 },
+						{ "px": [80,48], "src": [288,176], "f": 0, "t": 348, "d": [35], "a": 1 },
+						{ "px": [80,64], "src": [288,192], "f": 0, "t": 378, "d": [45], "a": 1 }
+					],
+					"entityInstances": []
 				},
 				{
 					"__identifier": "Ground_details",
